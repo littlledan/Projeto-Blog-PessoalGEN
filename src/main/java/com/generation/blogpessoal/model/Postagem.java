@@ -22,13 +22,13 @@ public class Postagem {
 	private Long id;
 	
 	//titulo que tenha no minimo 5 caracteres e no maximo 100 caracteres
-	@NotBlank(message = "O atributo título é Obrigatório!") //@notblank não deixa o texto ficar em branco
+	@NotBlank(message = "O atributo título é Obrigatório!") //@notblank proibe ausencia de qualquer coisa e resuca espaços em branco
 	@Size(min = 5, max = 100, message = "O atributo título deve conter no mínimo 05 e no máximo 100 caracteres")
 	@Column(length = 100)
 	private String titulo;
 	
 	//titulo que tenha no minimo 10 caracteres e no maximo 1000 caracteres
-	@NotBlank(message = "O atributo texto é Obrigatório!") //@notblank não deixa o texto ficar em branco
+	@NotBlank(message = "O atributo texto é Obrigatório!") //@notblank proibe ausencia de qualquer coisa e resuca espaços em branco
 	@Size(min = 10, max = 1000, message = "O atributo texto deve conter no mínimo 10 e no máximo 1000 caracteres")
 	@Column(length = 1000) //sobrescrevendo quantidade maxima de caracteres padrão
 	private String texto;
